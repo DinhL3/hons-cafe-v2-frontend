@@ -10,7 +10,7 @@ import DesktopMenu from './DesktopMenu';
 import type { NavPage } from './types';
 
 const pages: NavPage[] = [
-  { label: 'Home', path: '/about' },
+  { label: 'Home', path: '/' },
   { label: 'Menu', path: '/menu' },
   { label: 'About Us', path: '/about' },
 ];

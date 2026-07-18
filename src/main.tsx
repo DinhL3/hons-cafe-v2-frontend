@@ -9,13 +9,17 @@ import theme from './theme';
 import Layout from './Layout.tsx';
 import Error from './routes/error.tsx';
 import Root from './routes/root.tsx';
+import Menu from './routes/menu.tsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     errorElement: <Error />,
-    children: [{ path: '/', element: <Root /> }],
+    children: [
+      { path: '/', element: <Root /> },
+      { path: '/menu', element: <Menu /> },
+    ],
   },
 ]);
 

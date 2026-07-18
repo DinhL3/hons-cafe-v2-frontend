@@ -32,6 +32,7 @@ function DesktopMenu({ pages, onClose }: DesktopMenuProps) {
             display: 'block',
             fontWeight: 600,
             background: 'none',
+            textTransform: 'none',
             '&:hover': { color: teal[500] },
           }}
         >
