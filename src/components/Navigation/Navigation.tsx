@@ -19,11 +19,7 @@ function Navigation() {
   const [anchorElNav, setAnchorElNav] = useState<HTMLElement | null>(null);
 
   return (
-    <AppBar
-      position="static"
-      elevation={0}
-      sx={{ bgcolor: teal[100], borderBottom: 1, borderColor: teal[200] }}
-    >
+    <AppBar position="static" elevation={0} sx={{ bgcolor: teal[900] }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <NavLogo sx={{ display: { xs: 'none', md: 'flex' } }} />

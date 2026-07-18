@@ -27,13 +27,13 @@ function DesktopMenu({ pages, onClose }: DesktopMenuProps) {
           to={page.path}
           onClick={onClose}
           sx={{
-            my: 2,
-            color: teal[900],
+            color: teal[50],
             display: 'block',
             fontWeight: 600,
             background: 'none',
             textTransform: 'none',
-            '&:hover': { color: teal[500] },
+            minWidth: 'auto',
+            '&:hover': { color: teal[200] },
           }}
         >
           {page.label}

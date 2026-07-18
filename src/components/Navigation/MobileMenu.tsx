@@ -24,7 +24,7 @@ function MobileMenu({ pages, anchorEl, onOpen, onClose }: MobileMenuProps) {
         aria-controls="menu-appbar"
         aria-haspopup="true"
         onClick={onOpen}
-        sx={{ color: teal[900] }}
+        sx={{ color: teal[50] }}
       >
         <MenuIcon />
       </IconButton>

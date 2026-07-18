@@ -19,7 +19,7 @@ function NavLogo({ sx }: NavLogoProps) {
       sx={{
         mr: 2,
         fontWeight: 700,
-        color: teal[900],
+        color: teal[50],
         textDecoration: 'none',
         alignItems: 'center',
         gap: 1,
