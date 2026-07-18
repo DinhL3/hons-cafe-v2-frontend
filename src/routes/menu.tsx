@@ -21,7 +21,7 @@ function Menu() {
   );
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" sx={{ mb: 3 }}>
       <Typography
         variant="h4"
         component="h1"
@@ -53,7 +53,7 @@ function Menu() {
             >
               {category.name}
             </Typography>
-            <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+            <List sx={{ width: '100%', bgcolor: 'none' }}>
               {itemsInCategory.map((item) => (
                 <ListItem
                   key={item.id}

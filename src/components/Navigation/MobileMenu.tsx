@@ -43,8 +43,7 @@ function MobileMenu({ pages, anchorEl, onOpen, onClose }: MobileMenuProps) {
             sx: {
               mt: 1,
               minWidth: 160,
-              border: 1,
-              borderColor: teal[200],
+              bgcolor: teal[900],
               borderRadius: 2,
             },
           },
@@ -58,8 +57,7 @@ function MobileMenu({ pages, anchorEl, onOpen, onClose }: MobileMenuProps) {
             onClick={onClose}
             sx={{
               fontWeight: 600,
-              color: teal[900],
-              '&:hover': { color: teal[500], bgcolor: 'transparent' },
+              color: teal[50],
             }}
           >
             {page.label}

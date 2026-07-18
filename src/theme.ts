@@ -6,7 +6,7 @@ const theme = createTheme({
   },
   palette: {
     background: {
-      //   default: 'hsl(354, 83%, 97%)',
+      default: 'hsl(177, 41%, 97%)',
     },
   },
 });
