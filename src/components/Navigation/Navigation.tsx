@@ -11,8 +11,8 @@ import type { NavPage } from './types';
 
 const pages: NavPage[] = [
   { label: 'Home', path: '/about' },
-  { label: 'About Us', path: '/about' },
   { label: 'Menu', path: '/menu' },
+  { label: 'About Us', path: '/about' },
 ];
 
 function Navigation() {
@@ -33,7 +33,7 @@ function Navigation() {
             onOpen={(e) => setAnchorElNav(e.currentTarget)}
             onClose={() => setAnchorElNav(null)}
           />
-          <NavLogo sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1 }} />
+          <NavLogo sx={{ display: { xs: 'flex', md: 'none' } }} />
           <DesktopMenu pages={pages} onClose={() => setAnchorElNav(null)} />
         </Toolbar>
       </Container>

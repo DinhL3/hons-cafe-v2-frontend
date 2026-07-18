@@ -1,6 +1,7 @@
 import Typography from '@mui/material/Typography';
 import { teal } from '@mui/material/colors';
 import type { SxProps, Theme } from '@mui/material/styles';
+import { SiCoffeescript } from 'react-icons/si';
 
 import { Link } from 'react-router';
 
@@ -20,10 +21,13 @@ function NavLogo({ sx }: NavLogoProps) {
         fontWeight: 700,
         color: teal[900],
         textDecoration: 'none',
+        alignItems: 'center',
+        gap: 1,
         ...sx,
       }}
     >
-      HON'S CAFE
+      <SiCoffeescript size={24} />
+      Hon's cafe
     </Typography>
   );
 }
