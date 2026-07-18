@@ -2,7 +2,7 @@ import { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
-import { red } from '@mui/material/colors';
+import { teal } from '@mui/material/colors';
 
 import NavLogo from './NavLogo';
 import MobileMenu from './MobileMenu';
@@ -10,6 +10,7 @@ import DesktopMenu from './DesktopMenu';
 import type { NavPage } from './types';
 
 const pages: NavPage[] = [
+  { label: 'Home', path: '/about' },
   { label: 'About Us', path: '/about' },
   { label: 'Menu', path: '/menu' },
 ];
@@ -18,7 +19,11 @@ function Navigation() {
   const [anchorElNav, setAnchorElNav] = useState<HTMLElement | null>(null);
 
   return (
-    <AppBar position="static" sx={{ bgcolor: red[100] }}>
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{ bgcolor: teal[100], borderBottom: 1, borderColor: teal[200] }}
+    >
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <NavLogo sx={{ display: { xs: 'none', md: 'flex' } }} />

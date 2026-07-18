@@ -6,7 +6,7 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import { red } from '@mui/material/colors';
+import { teal } from '@mui/material/colors';
 
 function Root() {
   return (

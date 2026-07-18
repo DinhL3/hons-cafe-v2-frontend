@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
+import { teal } from '@mui/material/colors';
 import type { SxProps, Theme } from '@mui/material/styles';
 
 import { Link } from 'react-router';
@@ -18,12 +18,12 @@ function NavLogo({ sx }: NavLogoProps) {
       sx={{
         mr: 2,
         fontWeight: 700,
-        color: red[900],
+        color: teal[900],
         textDecoration: 'none',
         ...sx,
       }}
     >
-      KHANH NGUYEN
+      HON'S CAFE
     </Typography>
   );
 }

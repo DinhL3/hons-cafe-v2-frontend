@@ -3,8 +3,8 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import Typography from '@mui/material/Typography';
 import { Link } from 'react-router';
+import { teal } from '@mui/material/colors';
 
 import type { NavPage } from './types';
 
@@ -24,7 +24,7 @@ function MobileMenu({ pages, anchorEl, onOpen, onClose }: MobileMenuProps) {
         aria-controls="menu-appbar"
         aria-haspopup="true"
         onClick={onOpen}
-        sx={{ color: 'darkOrange.main' }}
+        sx={{ color: teal[900] }}
       >
         <MenuIcon />
       </IconButton>
@@ -37,6 +37,18 @@ function MobileMenu({ pages, anchorEl, onOpen, onClose }: MobileMenuProps) {
         open={Boolean(anchorEl)}
         onClose={onClose}
         sx={{ display: { xs: 'block', md: 'none' } }}
+        slotProps={{
+          paper: {
+            elevation: 0,
+            sx: {
+              mt: 1,
+              minWidth: 160,
+              border: 1,
+              borderColor: teal[200],
+              borderRadius: 2,
+            },
+          },
+        }}
       >
         {pages.map((page) => (
           <MenuItem
@@ -44,8 +56,13 @@ function MobileMenu({ pages, anchorEl, onOpen, onClose }: MobileMenuProps) {
             component={Link}
             to={page.path}
             onClick={onClose}
+            sx={{
+              fontWeight: 600,
+              color: teal[900],
+              '&:hover': { color: teal[500], bgcolor: 'transparent' },
+            }}
           >
-            <Typography sx={{ textAlign: 'center' }}>{page.label}</Typography>
+            {page.label}
           </MenuItem>
         ))}
       </Menu>

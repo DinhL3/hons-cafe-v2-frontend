@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router';
-import { red } from '@mui/material/colors';
+import { teal } from '@mui/material/colors';
 
 import type { NavPage } from './types';
 
@@ -28,11 +28,11 @@ function DesktopMenu({ pages, onClose }: DesktopMenuProps) {
           onClick={onClose}
           sx={{
             my: 2,
-            color: red[900],
+            color: teal[900],
             display: 'block',
             fontWeight: 600,
             background: 'none',
-            '&:hover': { color: red[500] },
+            '&:hover': { color: teal[500] },
           }}
         >
           {page.label}
