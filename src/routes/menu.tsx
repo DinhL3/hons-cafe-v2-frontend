@@ -80,11 +80,23 @@ function Menu() {
                       >
                         <Typography
                           component="span"
-                          sx={{ fontWeight: 'bold' }}
+                          sx={{
+                            fontWeight: 'bold',
+                            textDecoration: item.available
+                              ? 'none'
+                              : 'line-through',
+                          }}
                         >
                           {item.name}
                         </Typography>
-                        <Typography component="span">
+                        <Typography
+                          component="span"
+                          sx={{
+                            textDecoration: item.available
+                              ? 'none'
+                              : 'line-through',
+                          }}
+                        >
                           {item.price.toLocaleString('fi-FI', {
                             minimumFractionDigits: 2,
                             maximumFractionDigits: 2,

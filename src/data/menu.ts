@@ -31,7 +31,7 @@ export const menuItems: MenuItem[] = [
     price: 3.0,
     available: true,
     imageUrl:
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784395266/espresso_hr1jia.jpg',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399861/espresso_zkn6ck.jpg',
     tags: ['vegan'],
   },
   {
@@ -42,7 +42,7 @@ export const menuItems: MenuItem[] = [
     price: 3.5,
     available: true,
     imageUrl:
-      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784395586/americano_lo6gsw.png',
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399866/americano_alb5hv.jpg',
     tags: ['vegan'],
   },
   {
@@ -52,8 +52,9 @@ export const menuItems: MenuItem[] = [
     category: 'coffee',
     price: 4.0,
     available: true,
-    imageUrl: '',
-    tags: [],
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399865/cappuccino_lfilcl.jpg',
+    tags: ['vegetarian'],
   },
   {
     id: '4',
@@ -62,8 +63,9 @@ export const menuItems: MenuItem[] = [
     category: 'coffee',
     price: 4.5,
     available: true,
-    imageUrl: '',
-    tags: [],
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399858/latte_zlvfig.jpg',
+    tags: ['vegetarian'],
   },
   {
     id: '5',
@@ -72,8 +74,9 @@ export const menuItems: MenuItem[] = [
     category: 'coffee',
     price: 4.5,
     available: true,
-    imageUrl: '',
-    tags: [],
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399858/latte_zlvfig.jpg',
+    tags: ['vegetarian'],
   },
   {
     id: '9',
@@ -82,7 +85,8 @@ export const menuItems: MenuItem[] = [
     category: 'non-coffee',
     price: 5.0,
     available: true,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399858/matcha-latte_kzntvw.jpg',
     tags: ['vegetarian'],
   },
   {
@@ -92,7 +96,8 @@ export const menuItems: MenuItem[] = [
     category: 'non-coffee',
     price: 4.5,
     available: true,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399863/chai-latte_prvsty.jpg',
     tags: ['vegetarian'],
   },
   {
@@ -102,7 +107,8 @@ export const menuItems: MenuItem[] = [
     category: 'non-coffee',
     price: 4.3,
     available: true,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399859/hot-chocolate_y1z2vj.jpg',
     tags: ['vegetarian'],
   },
   {
@@ -112,7 +118,8 @@ export const menuItems: MenuItem[] = [
     category: 'non-coffee',
     price: 3.8,
     available: true,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399857/tea_baqh1e.jpg',
     tags: ['vegan'],
   },
   {
@@ -122,7 +129,8 @@ export const menuItems: MenuItem[] = [
     category: 'pastries',
     price: 3.5,
     available: true,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399862/croissant_ilakhe.jpg',
     tags: ['vegetarian'],
   },
   {
@@ -132,7 +140,8 @@ export const menuItems: MenuItem[] = [
     category: 'pastries',
     price: 4.0,
     available: true,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399865/banana-bread_qa1clm.jpg',
     tags: ['vegetarian'],
   },
   {
@@ -142,7 +151,8 @@ export const menuItems: MenuItem[] = [
     category: 'pastries',
     price: 5.0,
     available: false,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399864/carrot-cake_yolpwg.jpg',
     tags: ['vegetarian'],
   },
   {
@@ -152,17 +162,19 @@ export const menuItems: MenuItem[] = [
     category: 'pastries',
     price: 5.2,
     available: true,
-    imageUrl: '',
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399863/chocolate-cake_n8olgr.jpg',
     tags: ['vegetarian'],
   },
   {
     id: '18',
     name: 'Oatmeal Cookie',
-    description: 'Chewy oatmeal cookie with dark chocolate chunks.',
+    description: 'Crunchy oatmeal cookie',
     category: 'pastries',
     price: 2.8,
     available: true,
-    imageUrl: '',
-    tags: ['vegetarian'],
+    imageUrl:
+      'https://res.cloudinary.com/dlhzbr2to/image/upload/v1784399858/oatmeal-cookie_pdwpwj.jpg',
+    tags: ['vegan'],
   },
 ];
