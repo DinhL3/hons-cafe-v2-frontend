@@ -1,7 +1,9 @@
 import {
+  Alert,
   Avatar,
   Box,
   Chip,
+  CircularProgress,
   Container,
   List,
   ListItem,
@@ -13,10 +15,40 @@ import {
 import { teal } from '@mui/material/colors';
 import { BsCupFill } from 'react-icons/bs';
 
-import { menuCategories, menuItems } from '../data/menu';
+import { useMenu } from '../hooks/useMenu';
 
 function Menu() {
-  const sortedCategories = [...menuCategories].sort(
+  const { data, isPending, isError, error } = useMenu();
+
+  if (isPending) {
+    return (
+      <Container maxWidth="sm" sx={{ mb: 3 }}>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            mt: 8,
+          }}
+        >
+          <CircularProgress sx={{ color: teal[700] }} />
+        </Box>
+      </Container>
+    );
+  }
+
+  if (isError) {
+    return (
+      <Container maxWidth="sm" sx={{ mb: 3 }}>
+        <Alert severity="error" sx={{ mt: 4 }}>
+          {error instanceof Error
+            ? error.message
+            : 'Failed to load the menu.'}
+        </Alert>
+      </Container>
+    );
+  }
+
+  const sortedCategories = [...data.categories].sort(
     (a, b) => a.sortOrder - b.sortOrder,
   );
 
@@ -31,7 +63,7 @@ function Menu() {
       </Typography>
 
       {sortedCategories.map((category) => {
-        const itemsInCategory = menuItems.filter(
+        const itemsInCategory = data.items.filter(
           (item) => item.category === category.id,
         );
 
@@ -70,6 +102,7 @@ function Menu() {
                     )}
                   </ListItemAvatar>
                   <ListItemText
+                    slotProps={{ secondary: { component: 'div' } }}
                     primary={
                       <Box
                         sx={{
